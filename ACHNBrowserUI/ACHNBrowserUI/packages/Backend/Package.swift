@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "Backend",
     platforms: [
-        .macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS(.v6)
+        .macOS(.v10_15), .iOS(.v13), .tvOS(.v13), .watchOS("6.2")
     ],
     products: [
         .library(

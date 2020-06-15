@@ -8,7 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		157C03E7247AE56600568917 /* TodaySectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157C03E6247AE56600568917 /* TodaySectionView.swift */; };
+		3D36B9F42497DE420094CAC6 /* DodoCodeWatchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36B9F32497DE420094CAC6 /* DodoCodeWatchListView.swift */; };
+		3D36B9F82497E0100094CAC6 /* DodoCodeWatchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36B9F72497E0100094CAC6 /* DodoCodeWatchRow.swift */; };
+		3D50476D2497E06E00AF2170 /* Backend in Frameworks */ = {isa = PBXBuildFile; productRef = 3D50476C2497E06E00AF2170 /* Backend */; };
+		3D50476F2497E14200AF2170 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D50476E2497E14200AF2170 /* SwiftUI.framework */; };
+		3D5047712497E15600AF2170 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D5047702497E15600AF2170 /* CloudKit.framework */; };
+		3D5047722497E21600AF2170 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7FE78224574FB50011E8AB /* ActivityIndicator.swift */; };
 		3D7A1786247B21D200DB873D /* CustomTasksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7A1785247B21D200DB873D /* CustomTasksListView.swift */; };
+		3D9835792496B438006BE886 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9835772496B438006BE886 /* Interface.storyboard */; };
+		3D98357B2496B43A006BE886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D98357A2496B43A006BE886 /* Assets.xcassets */; };
+		3D9835822496B43A006BE886 /* ACNHBrowserUIWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3D9835812496B43A006BE886 /* ACNHBrowserUIWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3D9835872496B43A006BE886 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9835862496B43A006BE886 /* ContentView.swift */; };
+		3D9835892496B43A006BE886 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9835882496B43A006BE886 /* HostingController.swift */; };
+		3D98358B2496B43A006BE886 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98358A2496B43A006BE886 /* ExtensionDelegate.swift */; };
+		3D98358D2496B43A006BE886 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98358C2496B43A006BE886 /* NotificationController.swift */; };
+		3D98358F2496B43A006BE886 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D98358E2496B43A006BE886 /* NotificationView.swift */; };
+		3D9835912496B43B006BE886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9835902496B43B006BE886 /* Assets.xcassets */; };
+		3D9835942496B43B006BE886 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9835932496B43B006BE886 /* Preview Assets.xcassets */; };
+		3D98359A2496B43B006BE886 /* ACNHBrowserUIWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3D9835752496B438006BE886 /* ACNHBrowserUIWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3D9AB08B248256C200B47041 /* CustomTaskFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9AB08A248256C200B47041 /* CustomTaskFormView.swift */; };
 		3D9AB08F248256DC00B47041 /* CustomTaskRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9AB08E248256DC00B47041 /* CustomTaskRow.swift */; };
 		3D9AB093248257DF00B47041 /* CustomTaskFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9AB092248257DF00B47041 /* CustomTaskFormViewModel.swift */; };
@@ -208,7 +225,46 @@
 		FA0EC271247B77E400447D7E /* VillagersSortView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0EC270247B77E400447D7E /* VillagersSortView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3D9835832496B43A006BE886 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69AF8C45243E283D001DD9CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9835802496B43A006BE886;
+			remoteInfo = "ACNHBrowserUIWatch Extension";
+		};
+		3D9835972496B43B006BE886 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69AF8C45243E283D001DD9CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9835742496B438006BE886;
+			remoteInfo = ACNHBrowserUIWatch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
+		3D9835992496B43B006BE886 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3D98359A2496B43B006BE886 /* ACNHBrowserUIWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D98359D2496B43B006BE886 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3D9835822496B43A006BE886 /* ACNHBrowserUIWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69157C542471A5A1005B9002 /* Embed PlugIns */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -239,7 +295,25 @@
 		22EB1DC0246D4D1F00C62F76 /* ru */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3246F93724725C37001A1E06 /* zh-Hans */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; lineEnding = 0; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		325C0943246053E10043B6A7 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		3D36B9F32497DE420094CAC6 /* DodoCodeWatchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodoCodeWatchListView.swift; sourceTree = "<group>"; };
+		3D36B9F72497E0100094CAC6 /* DodoCodeWatchRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DodoCodeWatchRow.swift; sourceTree = "<group>"; };
+		3D50476E2497E14200AF2170 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		3D5047702497E15600AF2170 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		3D7A1785247B21D200DB873D /* CustomTasksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTasksListView.swift; sourceTree = "<group>"; };
+		3D9835752496B438006BE886 /* ACNHBrowserUIWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACNHBrowserUIWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9835782496B438006BE886 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		3D98357A2496B43A006BE886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D98357C2496B43A006BE886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9835812496B43A006BE886 /* ACNHBrowserUIWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ACNHBrowserUIWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9835862496B43A006BE886 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3D9835882496B43A006BE886 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		3D98358A2496B43A006BE886 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		3D98358C2496B43A006BE886 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		3D98358E2496B43A006BE886 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		3D9835902496B43B006BE886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D9835932496B43B006BE886 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3D9835952496B43B006BE886 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9835962496B43B006BE886 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		3D9AB08A248256C200B47041 /* CustomTaskFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTaskFormView.swift; sourceTree = "<group>"; };
 		3D9AB08E248256DC00B47041 /* CustomTaskRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTaskRow.swift; sourceTree = "<group>"; };
 		3D9AB092248257DF00B47041 /* CustomTaskFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTaskFormViewModel.swift; sourceTree = "<group>"; };
@@ -417,6 +491,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3D98357E2496B43A006BE886 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D5047712497E15600AF2170 /* CloudKit.framework in Frameworks */,
+				3D50476F2497E14200AF2170 /* SwiftUI.framework in Frameworks */,
+				3D50476D2497E06E00AF2170 /* Backend in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69157BD92471A5A1005B9002 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +552,23 @@
 			path = todayDashboard;
 			sourceTree = "<group>";
 		};
+		3D36B9F12497DDF30094CAC6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				3D36B9F22497DE090094CAC6 /* dodocode */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		3D36B9F22497DE090094CAC6 /* dodocode */ = {
+			isa = PBXGroup;
+			children = (
+				3D36B9F32497DE420094CAC6 /* DodoCodeWatchListView.swift */,
+				3D36B9F72497E0100094CAC6 /* DodoCodeWatchRow.swift */,
+			);
+			path = dodocode;
+			sourceTree = "<group>";
+		};
 		3D7A1784247B21AD00DB873D /* customTasks */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +577,41 @@
 				3D9AB08E248256DC00B47041 /* CustomTaskRow.swift */,
 			);
 			path = customTasks;
+			sourceTree = "<group>";
+		};
+		3D9835762496B438006BE886 /* ACNHBrowserUIWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3D9835772496B438006BE886 /* Interface.storyboard */,
+				3D98357A2496B43A006BE886 /* Assets.xcassets */,
+				3D98357C2496B43A006BE886 /* Info.plist */,
+			);
+			path = ACNHBrowserUIWatch;
+			sourceTree = "<group>";
+		};
+		3D9835852496B43A006BE886 /* ACNHBrowserUIWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D36B9F12497DDF30094CAC6 /* views */,
+				3D9835862496B43A006BE886 /* ContentView.swift */,
+				3D9835882496B43A006BE886 /* HostingController.swift */,
+				3D98358A2496B43A006BE886 /* ExtensionDelegate.swift */,
+				3D98358C2496B43A006BE886 /* NotificationController.swift */,
+				3D98358E2496B43A006BE886 /* NotificationView.swift */,
+				3D9835902496B43B006BE886 /* Assets.xcassets */,
+				3D9835952496B43B006BE886 /* Info.plist */,
+				3D9835962496B43B006BE886 /* PushNotificationPayload.apns */,
+				3D9835922496B43B006BE886 /* Preview Content */,
+			);
+			path = "ACNHBrowserUIWatch Extension";
+			sourceTree = "<group>";
+		};
+		3D9835922496B43B006BE886 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3D9835932496B43B006BE886 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		4C2D676C245F063E005831C4 /* charts */ = {
@@ -603,6 +739,8 @@
 		6951837324599C26005D28E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D5047702497E15600AF2170 /* CloudKit.framework */,
+				3D50476E2497E14200AF2170 /* SwiftUI.framework */,
 				69157C5B2471A5C1005B9002 /* CloudKit.framework */,
 				325C0943246053E10043B6A7 /* SwiftUI.framework */,
 				6951837424599C26005D28E0 /* StoreKit.framework */,
@@ -672,6 +810,8 @@
 				69CFCA14245A9C400059C067 /* Backend */,
 				69E4BBAE245ADF26001035E2 /* UI */,
 				69CFCA7F245AAF300059C067 /* Resources */,
+				3D9835762496B438006BE886 /* ACNHBrowserUIWatch */,
+				3D9835852496B43A006BE886 /* ACNHBrowserUIWatch Extension */,
 				69AF8C4E243E283D001DD9CB /* Products */,
 				6951837324599C26005D28E0 /* Frameworks */,
 			);
@@ -682,6 +822,8 @@
 			children = (
 				69CFCAC6245ADC780059C067 /* ACHNBrowserUITV.app */,
 				69157C582471A5A1005B9002 /* AC Helper.app */,
+				3D9835752496B438006BE886 /* ACNHBrowserUIWatch.app */,
+				3D9835812496B43A006BE886 /* ACNHBrowserUIWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -980,6 +1122,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3D9835742496B438006BE886 /* ACNHBrowserUIWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9835A12496B43B006BE886 /* Build configuration list for PBXNativeTarget "ACNHBrowserUIWatch" */;
+			buildPhases = (
+				3D9835732496B438006BE886 /* Resources */,
+				3D98359D2496B43B006BE886 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D9835842496B43A006BE886 /* PBXTargetDependency */,
+			);
+			name = ACNHBrowserUIWatch;
+			productName = ACNHBrowserUIWatch;
+			productReference = 3D9835752496B438006BE886 /* ACNHBrowserUIWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3D9835802496B43A006BE886 /* ACNHBrowserUIWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9835A02496B43B006BE886 /* Build configuration list for PBXNativeTarget "ACNHBrowserUIWatch Extension" */;
+			buildPhases = (
+				3D98357D2496B43A006BE886 /* Sources */,
+				3D98357E2496B43A006BE886 /* Frameworks */,
+				3D98357F2496B43A006BE886 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ACNHBrowserUIWatch Extension";
+			packageProductDependencies = (
+				3D50476C2497E06E00AF2170 /* Backend */,
+			);
+			productName = "ACNHBrowserUIWatch Extension";
+			productReference = 3D9835812496B43A006BE886 /* ACNHBrowserUIWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		69157B762471A5A1005B9002 /* ACHNBrowserUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69157C552471A5A1005B9002 /* Build configuration list for PBXNativeTarget "ACHNBrowserUI" */;
@@ -989,10 +1168,12 @@
 				69157BE02471A5A1005B9002 /* Resources */,
 				69157C542471A5A1005B9002 /* Embed PlugIns */,
 				3D2E97DC24968DB30041EFA9 /* ShellScript */,
+				3D9835992496B43B006BE886 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3D9835982496B43B006BE886 /* PBXTargetDependency */,
 			);
 			name = ACHNBrowserUI;
 			packageProductDependencies = (
@@ -1033,10 +1214,16 @@
 		69AF8C45243E283D001DD9CB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Thomas Ricouard";
 				TargetAttributes = {
+					3D9835742496B438006BE886 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					3D9835802496B43A006BE886 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					69CFCAC5245ADC780059C067 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -1069,11 +1256,31 @@
 			targets = (
 				69157B762471A5A1005B9002 /* ACHNBrowserUI */,
 				69CFCAC5245ADC780059C067 /* ACHNBrowserUITV */,
+				3D9835742496B438006BE886 /* ACNHBrowserUIWatch */,
+				3D9835802496B43A006BE886 /* ACNHBrowserUIWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3D9835732496B438006BE886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D98357B2496B43A006BE886 /* Assets.xcassets in Resources */,
+				3D9835792496B438006BE886 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D98357F2496B43A006BE886 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9835942496B43B006BE886 /* Preview Assets.xcassets in Resources */,
+				3D9835912496B43B006BE886 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69157BE02471A5A1005B9002 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1172,6 +1379,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3D98357D2496B43A006BE886 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9835892496B43A006BE886 /* HostingController.swift in Sources */,
+				3D36B9F42497DE420094CAC6 /* DodoCodeWatchListView.swift in Sources */,
+				3D36B9F82497E0100094CAC6 /* DodoCodeWatchRow.swift in Sources */,
+				3D9835872496B43A006BE886 /* ContentView.swift in Sources */,
+				3D5047722497E21600AF2170 /* ActivityIndicator.swift in Sources */,
+				3D98358D2496B43A006BE886 /* NotificationController.swift in Sources */,
+				3D98358B2496B43A006BE886 /* ExtensionDelegate.swift in Sources */,
+				3D98358F2496B43A006BE886 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69157B7D2471A5A1005B9002 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1325,7 +1547,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3D9835842496B43A006BE886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9835802496B43A006BE886 /* ACNHBrowserUIWatch Extension */;
+			targetProxy = 3D9835832496B43A006BE886 /* PBXContainerItemProxy */;
+		};
+		3D9835982496B43B006BE886 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9835742496B438006BE886 /* ACNHBrowserUIWatch */;
+			targetProxy = 3D9835972496B43B006BE886 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		3D9835772496B438006BE886 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9835782496B438006BE886 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		3DB1260224686F0800E74AA5 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1370,6 +1613,95 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3D98359B2496B43B006BE886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development: Thomas Ricouard (7MB55D6BJ5)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6P74P6T99;
+				IBSC_MODULE = ACNHBrowserUIWatch_Extension;
+				INFOPLIST_FILE = ACNHBrowserUIWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomasricouard.ACNH.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		3D98359C2496B43B006BE886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z6P74P6T99;
+				IBSC_MODULE = ACNHBrowserUIWatch_Extension;
+				INFOPLIST_FILE = ACNHBrowserUIWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomasricouard.ACNH.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		3D98359E2496B43B006BE886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ACNHBrowserUIWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 669KAQV38X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ACNHBrowserUIWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomasricouard.ACNH.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		3D98359F2496B43B006BE886 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ACNHBrowserUIWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 669KAQV38X;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "ACNHBrowserUIWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.thomasricouard.ACNH.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 		69157C562471A5A1005B9002 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1594,6 +1926,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3D9835A02496B43B006BE886 /* Build configuration list for PBXNativeTarget "ACNHBrowserUIWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D98359E2496B43B006BE886 /* Debug */,
+				3D98359F2496B43B006BE886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9835A12496B43B006BE886 /* Build configuration list for PBXNativeTarget "ACNHBrowserUIWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D98359B2496B43B006BE886 /* Debug */,
+				3D98359C2496B43B006BE886 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		69157C552471A5A1005B9002 /* Build configuration list for PBXNativeTarget "ACHNBrowserUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1659,6 +2009,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3D50476C2497E06E00AF2170 /* Backend */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Backend;
+		};
 		69157B772471A5A1005B9002 /* ACNHEvents */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 69157B782471A5A1005B9002 /* XCRemoteSwiftPackageReference "Date-ACNHEvents" */;
